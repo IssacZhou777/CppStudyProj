@@ -1,0 +1,49 @@
+1、C++编译环境搭建；
+a、cc,gcc,g++区别；
+http://stackoverflow.com/questions/1516609/difference-between-cc-gcc-and-g
+
+b、GNU make简介；
+http://www.ruanyifeng.com/blog/2015/02/make.html
+另附一份 make 语法pdf文档，详见 gnu_make.pdf
+
+c、手动用文本编辑工具写一个C++程序;
+详见 test目录下的firstApp程序。
+
+2、const 关键字的使用；
+a、修饰变量;
+b、修饰成员函数；
+
+4、结构体；
+1、位域；
+http://www.cnblogs.com/bigrabbit/archive/2012/09/20/2695543.html
+
+2、字节对齐；
+     1) 数据类型自身的对齐值：char型数据自身对齐值为1字节，short型数据为2字节，int/float型为4字节，double型为8字节。
+     2) 结构体或类的自身对齐值：其成员中自身对齐值最大的那个值。
+     3) 指定对齐值：#pragma pack (value)时的指定对齐值value。
+     4) 数据成员、结构体和类的有效对齐值：自身对齐值和指定对齐值中较小者，即有效对齐值=min{自身对齐值，当前指定的pack值}。
+
+http://www.cnblogs.com/clover-toeic/p/3853132.html
+
+
+3、union（联合体）
+
+
+4、大端&小端
+ExampleStruct   aStruct;
+aStruct.int1 = 0x01020304;
+aStruct.int2 = 0x05060708;
+
+// BE
+￼
+
+// LE
+￼
+
+
+https://developer.apple.com/library/mac/documentation/CoreFoundation/Conceptual/CFMemoryMgmt/Concepts/ByteOrdering.html
+http://www.linuxjournal.com/article/6788
+
+
+http://c.biancheng.net/cpp/html/449.html
+
